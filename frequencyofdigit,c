@@ -1,0 +1,15 @@
+#include<stdio.h>
+void main(){
+    //frequency of digit=11223 1 is appearing 2 times and like wise for 2 and 3
+    int i,n,d,r,ans=0;
+    printf("enter the number");
+    scanf("%d",&n);
+    printf("enter the digit");
+    scanf("%d",&d);
+    for(i=1;n!=0;i++){
+      r=n%10;
+      if(r==d){
+        ans=ans+1;
+      }n=n/10;
+    }printf("frequency of given digit =%d",ans);
+}
